@@ -108,8 +108,8 @@ TextureImporter:
       name: thatched-roof - Copy_0
       rect:
         serializedVersion: 2
-        x: 160
-        y: 416
+        x: 64
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -129,8 +129,8 @@ TextureImporter:
       name: thatched-roof - Copy_1
       rect:
         serializedVersion: 2
-        x: 192
-        y: 416
+        x: 96
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -150,8 +150,8 @@ TextureImporter:
       name: thatched-roof - Copy_2
       rect:
         serializedVersion: 2
-        x: 224
-        y: 416
+        x: 128
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -171,8 +171,8 @@ TextureImporter:
       name: thatched-roof - Copy_3
       rect:
         serializedVersion: 2
-        x: 256
-        y: 416
+        x: 160
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -192,8 +192,8 @@ TextureImporter:
       name: thatched-roof - Copy_4
       rect:
         serializedVersion: 2
-        x: 288
-        y: 416
+        x: 224
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -213,8 +213,8 @@ TextureImporter:
       name: thatched-roof - Copy_5
       rect:
         serializedVersion: 2
-        x: 320
-        y: 416
+        x: 256
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -234,8 +234,8 @@ TextureImporter:
       name: thatched-roof - Copy_6
       rect:
         serializedVersion: 2
-        x: 352
-        y: 416
+        x: 288
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -255,8 +255,8 @@ TextureImporter:
       name: thatched-roof - Copy_7
       rect:
         serializedVersion: 2
-        x: 384
-        y: 416
+        x: 320
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -276,8 +276,8 @@ TextureImporter:
       name: thatched-roof - Copy_8
       rect:
         serializedVersion: 2
-        x: 416
-        y: 416
+        x: 352
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -297,8 +297,8 @@ TextureImporter:
       name: thatched-roof - Copy_9
       rect:
         serializedVersion: 2
-        x: 448
-        y: 416
+        x: 384
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -318,8 +318,8 @@ TextureImporter:
       name: thatched-roof - Copy_10
       rect:
         serializedVersion: 2
-        x: 480
-        y: 416
+        x: 448
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -339,8 +339,8 @@ TextureImporter:
       name: thatched-roof - Copy_11
       rect:
         serializedVersion: 2
-        x: 0
-        y: 384
+        x: 480
+        y: 480
         width: 32
         height: 32
       alignment: 0
@@ -360,8 +360,8 @@ TextureImporter:
       name: thatched-roof - Copy_12
       rect:
         serializedVersion: 2
-        x: 32
-        y: 384
+        x: 64
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -381,8 +381,8 @@ TextureImporter:
       name: thatched-roof - Copy_13
       rect:
         serializedVersion: 2
-        x: 160
-        y: 384
+        x: 96
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -402,8 +402,8 @@ TextureImporter:
       name: thatched-roof - Copy_14
       rect:
         serializedVersion: 2
-        x: 192
-        y: 384
+        x: 128
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -423,8 +423,8 @@ TextureImporter:
       name: thatched-roof - Copy_15
       rect:
         serializedVersion: 2
-        x: 224
-        y: 384
+        x: 160
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -444,8 +444,8 @@ TextureImporter:
       name: thatched-roof - Copy_16
       rect:
         serializedVersion: 2
-        x: 256
-        y: 384
+        x: 192
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -465,8 +465,8 @@ TextureImporter:
       name: thatched-roof - Copy_17
       rect:
         serializedVersion: 2
-        x: 288
-        y: 384
+        x: 224
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -486,8 +486,8 @@ TextureImporter:
       name: thatched-roof - Copy_18
       rect:
         serializedVersion: 2
-        x: 320
-        y: 384
+        x: 256
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -507,8 +507,8 @@ TextureImporter:
       name: thatched-roof - Copy_19
       rect:
         serializedVersion: 2
-        x: 352
-        y: 384
+        x: 288
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -528,8 +528,8 @@ TextureImporter:
       name: thatched-roof - Copy_20
       rect:
         serializedVersion: 2
-        x: 384
-        y: 384
+        x: 320
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -549,8 +549,8 @@ TextureImporter:
       name: thatched-roof - Copy_21
       rect:
         serializedVersion: 2
-        x: 416
-        y: 384
+        x: 352
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -570,8 +570,8 @@ TextureImporter:
       name: thatched-roof - Copy_22
       rect:
         serializedVersion: 2
-        x: 448
-        y: 384
+        x: 384
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -591,8 +591,8 @@ TextureImporter:
       name: thatched-roof - Copy_23
       rect:
         serializedVersion: 2
-        x: 480
-        y: 384
+        x: 416
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -612,8 +612,8 @@ TextureImporter:
       name: thatched-roof - Copy_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 352
+        x: 448
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -633,8 +633,8 @@ TextureImporter:
       name: thatched-roof - Copy_25
       rect:
         serializedVersion: 2
-        x: 32
-        y: 352
+        x: 480
+        y: 448
         width: 32
         height: 32
       alignment: 0
@@ -654,8 +654,8 @@ TextureImporter:
       name: thatched-roof - Copy_26
       rect:
         serializedVersion: 2
-        x: 160
-        y: 352
+        x: 64
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -675,8 +675,8 @@ TextureImporter:
       name: thatched-roof - Copy_27
       rect:
         serializedVersion: 2
-        x: 192
-        y: 352
+        x: 96
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -696,8 +696,8 @@ TextureImporter:
       name: thatched-roof - Copy_28
       rect:
         serializedVersion: 2
-        x: 224
-        y: 352
+        x: 128
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -717,8 +717,8 @@ TextureImporter:
       name: thatched-roof - Copy_29
       rect:
         serializedVersion: 2
-        x: 256
-        y: 352
+        x: 160
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -738,8 +738,8 @@ TextureImporter:
       name: thatched-roof - Copy_30
       rect:
         serializedVersion: 2
-        x: 288
-        y: 352
+        x: 192
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -759,8 +759,8 @@ TextureImporter:
       name: thatched-roof - Copy_31
       rect:
         serializedVersion: 2
-        x: 320
-        y: 352
+        x: 224
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -780,8 +780,8 @@ TextureImporter:
       name: thatched-roof - Copy_32
       rect:
         serializedVersion: 2
-        x: 352
-        y: 352
+        x: 256
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -801,8 +801,8 @@ TextureImporter:
       name: thatched-roof - Copy_33
       rect:
         serializedVersion: 2
-        x: 384
-        y: 352
+        x: 288
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -822,8 +822,8 @@ TextureImporter:
       name: thatched-roof - Copy_34
       rect:
         serializedVersion: 2
-        x: 416
-        y: 352
+        x: 320
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -843,8 +843,8 @@ TextureImporter:
       name: thatched-roof - Copy_35
       rect:
         serializedVersion: 2
-        x: 448
-        y: 352
+        x: 352
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -864,8 +864,8 @@ TextureImporter:
       name: thatched-roof - Copy_36
       rect:
         serializedVersion: 2
-        x: 480
-        y: 352
+        x: 384
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -885,8 +885,8 @@ TextureImporter:
       name: thatched-roof - Copy_37
       rect:
         serializedVersion: 2
-        x: 0
-        y: 320
+        x: 416
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -906,8 +906,8 @@ TextureImporter:
       name: thatched-roof - Copy_38
       rect:
         serializedVersion: 2
-        x: 32
-        y: 320
+        x: 448
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -927,8 +927,8 @@ TextureImporter:
       name: thatched-roof - Copy_39
       rect:
         serializedVersion: 2
-        x: 64
-        y: 320
+        x: 480
+        y: 416
         width: 32
         height: 32
       alignment: 0
@@ -948,8 +948,8 @@ TextureImporter:
       name: thatched-roof - Copy_40
       rect:
         serializedVersion: 2
-        x: 96
-        y: 320
+        x: 64
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -969,8 +969,8 @@ TextureImporter:
       name: thatched-roof - Copy_41
       rect:
         serializedVersion: 2
-        x: 128
-        y: 320
+        x: 96
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -990,8 +990,8 @@ TextureImporter:
       name: thatched-roof - Copy_42
       rect:
         serializedVersion: 2
-        x: 160
-        y: 320
+        x: 128
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1011,8 +1011,8 @@ TextureImporter:
       name: thatched-roof - Copy_43
       rect:
         serializedVersion: 2
-        x: 192
-        y: 320
+        x: 160
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1032,8 +1032,8 @@ TextureImporter:
       name: thatched-roof - Copy_44
       rect:
         serializedVersion: 2
-        x: 224
-        y: 320
+        x: 192
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1053,8 +1053,8 @@ TextureImporter:
       name: thatched-roof - Copy_45
       rect:
         serializedVersion: 2
-        x: 256
-        y: 320
+        x: 224
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1074,8 +1074,8 @@ TextureImporter:
       name: thatched-roof - Copy_46
       rect:
         serializedVersion: 2
-        x: 288
-        y: 320
+        x: 256
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1095,8 +1095,8 @@ TextureImporter:
       name: thatched-roof - Copy_47
       rect:
         serializedVersion: 2
-        x: 320
-        y: 320
+        x: 288
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1116,8 +1116,8 @@ TextureImporter:
       name: thatched-roof - Copy_48
       rect:
         serializedVersion: 2
-        x: 352
-        y: 320
+        x: 320
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1137,8 +1137,8 @@ TextureImporter:
       name: thatched-roof - Copy_49
       rect:
         serializedVersion: 2
-        x: 384
-        y: 320
+        x: 352
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1158,8 +1158,8 @@ TextureImporter:
       name: thatched-roof - Copy_50
       rect:
         serializedVersion: 2
-        x: 416
-        y: 320
+        x: 384
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1179,8 +1179,8 @@ TextureImporter:
       name: thatched-roof - Copy_51
       rect:
         serializedVersion: 2
-        x: 448
-        y: 320
+        x: 416
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1200,8 +1200,8 @@ TextureImporter:
       name: thatched-roof - Copy_52
       rect:
         serializedVersion: 2
-        x: 480
-        y: 320
+        x: 448
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1221,8 +1221,8 @@ TextureImporter:
       name: thatched-roof - Copy_53
       rect:
         serializedVersion: 2
-        x: 0
-        y: 288
+        x: 480
+        y: 384
         width: 32
         height: 32
       alignment: 0
@@ -1242,8 +1242,8 @@ TextureImporter:
       name: thatched-roof - Copy_54
       rect:
         serializedVersion: 2
-        x: 32
-        y: 288
+        x: 64
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1263,8 +1263,8 @@ TextureImporter:
       name: thatched-roof - Copy_55
       rect:
         serializedVersion: 2
-        x: 64
-        y: 288
+        x: 96
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1284,8 +1284,8 @@ TextureImporter:
       name: thatched-roof - Copy_56
       rect:
         serializedVersion: 2
-        x: 96
-        y: 288
+        x: 128
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1305,8 +1305,8 @@ TextureImporter:
       name: thatched-roof - Copy_57
       rect:
         serializedVersion: 2
-        x: 128
-        y: 288
+        x: 160
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1326,8 +1326,8 @@ TextureImporter:
       name: thatched-roof - Copy_58
       rect:
         serializedVersion: 2
-        x: 160
-        y: 288
+        x: 192
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1347,8 +1347,8 @@ TextureImporter:
       name: thatched-roof - Copy_59
       rect:
         serializedVersion: 2
-        x: 192
-        y: 288
+        x: 224
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1369,7 +1369,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 288
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1390,7 +1390,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 288
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1411,7 +1411,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 288
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1432,7 +1432,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 352
-        y: 288
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1453,7 +1453,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 288
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1474,7 +1474,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 416
-        y: 288
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1495,7 +1495,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 288
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1515,8 +1515,8 @@ TextureImporter:
       name: thatched-roof - Copy_67
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
+        x: 480
+        y: 352
         width: 32
         height: 32
       alignment: 0
@@ -1536,8 +1536,8 @@ TextureImporter:
       name: thatched-roof - Copy_68
       rect:
         serializedVersion: 2
-        x: 32
-        y: 256
+        x: 64
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1558,7 +1558,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 256
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1579,7 +1579,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 256
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1600,7 +1600,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 256
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1620,8 +1620,8 @@ TextureImporter:
       name: thatched-roof - Copy_72
       rect:
         serializedVersion: 2
-        x: 224
-        y: 256
+        x: 192
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1641,8 +1641,8 @@ TextureImporter:
       name: thatched-roof - Copy_73
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
+        x: 224
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1662,8 +1662,8 @@ TextureImporter:
       name: thatched-roof - Copy_74
       rect:
         serializedVersion: 2
-        x: 288
-        y: 256
+        x: 256
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1683,8 +1683,8 @@ TextureImporter:
       name: thatched-roof - Copy_75
       rect:
         serializedVersion: 2
-        x: 320
-        y: 256
+        x: 288
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1704,8 +1704,8 @@ TextureImporter:
       name: thatched-roof - Copy_76
       rect:
         serializedVersion: 2
-        x: 352
-        y: 256
+        x: 320
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1725,8 +1725,8 @@ TextureImporter:
       name: thatched-roof - Copy_77
       rect:
         serializedVersion: 2
-        x: 384
-        y: 256
+        x: 352
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1746,8 +1746,8 @@ TextureImporter:
       name: thatched-roof - Copy_78
       rect:
         serializedVersion: 2
-        x: 416
-        y: 256
+        x: 384
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1767,8 +1767,8 @@ TextureImporter:
       name: thatched-roof - Copy_79
       rect:
         serializedVersion: 2
-        x: 448
-        y: 256
+        x: 416
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1788,8 +1788,8 @@ TextureImporter:
       name: thatched-roof - Copy_80
       rect:
         serializedVersion: 2
-        x: 480
-        y: 256
+        x: 448
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1809,8 +1809,8 @@ TextureImporter:
       name: thatched-roof - Copy_81
       rect:
         serializedVersion: 2
-        x: 0
-        y: 224
+        x: 480
+        y: 320
         width: 32
         height: 32
       alignment: 0
@@ -1830,8 +1830,8 @@ TextureImporter:
       name: thatched-roof - Copy_82
       rect:
         serializedVersion: 2
-        x: 32
-        y: 224
+        x: 64
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -1851,8 +1851,8 @@ TextureImporter:
       name: thatched-roof - Copy_83
       rect:
         serializedVersion: 2
-        x: 64
-        y: 224
+        x: 96
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -1872,8 +1872,8 @@ TextureImporter:
       name: thatched-roof - Copy_84
       rect:
         serializedVersion: 2
-        x: 96
-        y: 224
+        x: 128
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -1893,8 +1893,8 @@ TextureImporter:
       name: thatched-roof - Copy_85
       rect:
         serializedVersion: 2
-        x: 128
-        y: 224
+        x: 160
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -1914,8 +1914,8 @@ TextureImporter:
       name: thatched-roof - Copy_86
       rect:
         serializedVersion: 2
-        x: 224
-        y: 224
+        x: 192
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -1935,8 +1935,8 @@ TextureImporter:
       name: thatched-roof - Copy_87
       rect:
         serializedVersion: 2
-        x: 256
-        y: 224
+        x: 224
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -1956,8 +1956,8 @@ TextureImporter:
       name: thatched-roof - Copy_88
       rect:
         serializedVersion: 2
-        x: 288
-        y: 224
+        x: 256
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -1977,8 +1977,8 @@ TextureImporter:
       name: thatched-roof - Copy_89
       rect:
         serializedVersion: 2
-        x: 320
-        y: 224
+        x: 288
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -1998,8 +1998,8 @@ TextureImporter:
       name: thatched-roof - Copy_90
       rect:
         serializedVersion: 2
-        x: 352
-        y: 224
+        x: 320
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -2019,8 +2019,8 @@ TextureImporter:
       name: thatched-roof - Copy_91
       rect:
         serializedVersion: 2
-        x: 384
-        y: 224
+        x: 352
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -2040,8 +2040,8 @@ TextureImporter:
       name: thatched-roof - Copy_92
       rect:
         serializedVersion: 2
-        x: 416
-        y: 224
+        x: 384
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -2061,8 +2061,8 @@ TextureImporter:
       name: thatched-roof - Copy_93
       rect:
         serializedVersion: 2
-        x: 448
-        y: 224
+        x: 416
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -2082,8 +2082,8 @@ TextureImporter:
       name: thatched-roof - Copy_94
       rect:
         serializedVersion: 2
-        x: 480
-        y: 224
+        x: 448
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -2103,8 +2103,8 @@ TextureImporter:
       name: thatched-roof - Copy_95
       rect:
         serializedVersion: 2
-        x: 32
-        y: 192
+        x: 480
+        y: 288
         width: 32
         height: 32
       alignment: 0
@@ -2125,7 +2125,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 192
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -2146,7 +2146,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 192
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -2166,8 +2166,8 @@ TextureImporter:
       name: thatched-roof - Copy_98
       rect:
         serializedVersion: 2
-        x: 160
-        y: 192
+        x: 128
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -2187,8 +2187,8 @@ TextureImporter:
       name: thatched-roof - Copy_99
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
+        x: 160
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -2208,8 +2208,8 @@ TextureImporter:
       name: thatched-roof - Copy_100
       rect:
         serializedVersion: 2
-        x: 224
-        y: 192
+        x: 192
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -2229,8 +2229,8 @@ TextureImporter:
       name: thatched-roof - Copy_101
       rect:
         serializedVersion: 2
-        x: 256
-        y: 192
+        x: 224
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -2250,8 +2250,8 @@ TextureImporter:
       name: thatched-roof - Copy_102
       rect:
         serializedVersion: 2
-        x: 288
-        y: 192
+        x: 256
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -2271,8 +2271,8 @@ TextureImporter:
       name: thatched-roof - Copy_103
       rect:
         serializedVersion: 2
-        x: 320
-        y: 192
+        x: 288
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -2292,8 +2292,8 @@ TextureImporter:
       name: thatched-roof - Copy_104
       rect:
         serializedVersion: 2
-        x: 352
-        y: 192
+        x: 320
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -2313,8 +2313,8 @@ TextureImporter:
       name: thatched-roof - Copy_105
       rect:
         serializedVersion: 2
-        x: 384
-        y: 192
+        x: 352
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -2334,8 +2334,8 @@ TextureImporter:
       name: thatched-roof - Copy_106
       rect:
         serializedVersion: 2
-        x: 416
-        y: 192
+        x: 384
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -2355,8 +2355,8 @@ TextureImporter:
       name: thatched-roof - Copy_107
       rect:
         serializedVersion: 2
-        x: 448
-        y: 192
+        x: 416
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -2376,8 +2376,8 @@ TextureImporter:
       name: thatched-roof - Copy_108
       rect:
         serializedVersion: 2
-        x: 480
-        y: 192
+        x: 448
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -2397,8 +2397,8 @@ TextureImporter:
       name: thatched-roof - Copy_109
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
+        x: 480
+        y: 256
         width: 32
         height: 32
       alignment: 0
@@ -2418,8 +2418,8 @@ TextureImporter:
       name: thatched-roof - Copy_110
       rect:
         serializedVersion: 2
-        x: 32
-        y: 160
+        x: 64
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -2439,8 +2439,8 @@ TextureImporter:
       name: thatched-roof - Copy_111
       rect:
         serializedVersion: 2
-        x: 64
-        y: 160
+        x: 96
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -2460,8 +2460,8 @@ TextureImporter:
       name: thatched-roof - Copy_112
       rect:
         serializedVersion: 2
-        x: 96
-        y: 160
+        x: 128
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -2482,7 +2482,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 160
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -2502,8 +2502,8 @@ TextureImporter:
       name: thatched-roof - Copy_114
       rect:
         serializedVersion: 2
-        x: 192
-        y: 160
+        x: 224
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -2523,8 +2523,8 @@ TextureImporter:
       name: thatched-roof - Copy_115
       rect:
         serializedVersion: 2
-        x: 224
-        y: 160
+        x: 256
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -2544,8 +2544,8 @@ TextureImporter:
       name: thatched-roof - Copy_116
       rect:
         serializedVersion: 2
-        x: 256
-        y: 160
+        x: 288
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -2565,8 +2565,8 @@ TextureImporter:
       name: thatched-roof - Copy_117
       rect:
         serializedVersion: 2
-        x: 288
-        y: 160
+        x: 320
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -2586,8 +2586,8 @@ TextureImporter:
       name: thatched-roof - Copy_118
       rect:
         serializedVersion: 2
-        x: 320
-        y: 160
+        x: 352
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -2607,8 +2607,8 @@ TextureImporter:
       name: thatched-roof - Copy_119
       rect:
         serializedVersion: 2
-        x: 352
-        y: 160
+        x: 384
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -2628,8 +2628,8 @@ TextureImporter:
       name: thatched-roof - Copy_120
       rect:
         serializedVersion: 2
-        x: 384
-        y: 160
+        x: 448
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -2649,8 +2649,8 @@ TextureImporter:
       name: thatched-roof - Copy_121
       rect:
         serializedVersion: 2
-        x: 416
-        y: 160
+        x: 480
+        y: 224
         width: 32
         height: 32
       alignment: 0
@@ -2670,8 +2670,8 @@ TextureImporter:
       name: thatched-roof - Copy_122
       rect:
         serializedVersion: 2
-        x: 448
-        y: 160
+        x: 64
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -2691,8 +2691,8 @@ TextureImporter:
       name: thatched-roof - Copy_123
       rect:
         serializedVersion: 2
-        x: 480
-        y: 160
+        x: 96
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -2712,8 +2712,8 @@ TextureImporter:
       name: thatched-roof - Copy_124
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
+        x: 128
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -2733,8 +2733,8 @@ TextureImporter:
       name: thatched-roof - Copy_125
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
+        x: 160
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -2754,8 +2754,8 @@ TextureImporter:
       name: thatched-roof - Copy_126
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
+        x: 192
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -2775,8 +2775,8 @@ TextureImporter:
       name: thatched-roof - Copy_127
       rect:
         serializedVersion: 2
-        x: 96
-        y: 128
+        x: 288
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -2796,8 +2796,8 @@ TextureImporter:
       name: thatched-roof - Copy_128
       rect:
         serializedVersion: 2
-        x: 160
-        y: 128
+        x: 320
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -2817,8 +2817,8 @@ TextureImporter:
       name: thatched-roof - Copy_129
       rect:
         serializedVersion: 2
-        x: 192
-        y: 128
+        x: 352
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -2838,8 +2838,8 @@ TextureImporter:
       name: thatched-roof - Copy_130
       rect:
         serializedVersion: 2
-        x: 224
-        y: 128
+        x: 384
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -2859,8 +2859,8 @@ TextureImporter:
       name: thatched-roof - Copy_131
       rect:
         serializedVersion: 2
-        x: 256
-        y: 128
+        x: 416
+        y: 192
         width: 32
         height: 32
       alignment: 0
@@ -2880,8 +2880,8 @@ TextureImporter:
       name: thatched-roof - Copy_132
       rect:
         serializedVersion: 2
-        x: 288
-        y: 128
+        x: 64
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -2901,8 +2901,8 @@ TextureImporter:
       name: thatched-roof - Copy_133
       rect:
         serializedVersion: 2
-        x: 320
-        y: 128
+        x: 96
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -2922,8 +2922,8 @@ TextureImporter:
       name: thatched-roof - Copy_134
       rect:
         serializedVersion: 2
-        x: 352
-        y: 128
+        x: 128
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -2943,8 +2943,8 @@ TextureImporter:
       name: thatched-roof - Copy_135
       rect:
         serializedVersion: 2
-        x: 384
-        y: 128
+        x: 160
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -2964,8 +2964,8 @@ TextureImporter:
       name: thatched-roof - Copy_136
       rect:
         serializedVersion: 2
-        x: 416
-        y: 128
+        x: 192
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -2985,8 +2985,8 @@ TextureImporter:
       name: thatched-roof - Copy_137
       rect:
         serializedVersion: 2
-        x: 448
-        y: 128
+        x: 224
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -3006,8 +3006,8 @@ TextureImporter:
       name: thatched-roof - Copy_138
       rect:
         serializedVersion: 2
-        x: 480
-        y: 128
+        x: 288
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -3027,8 +3027,8 @@ TextureImporter:
       name: thatched-roof - Copy_139
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 320
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -3048,8 +3048,8 @@ TextureImporter:
       name: thatched-roof - Copy_140
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 352
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -3069,8 +3069,8 @@ TextureImporter:
       name: thatched-roof - Copy_141
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
+        x: 384
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -3090,8 +3090,8 @@ TextureImporter:
       name: thatched-roof - Copy_142
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
+        x: 416
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -3111,8 +3111,8 @@ TextureImporter:
       name: thatched-roof - Copy_143
       rect:
         serializedVersion: 2
-        x: 160
-        y: 96
+        x: 448
+        y: 160
         width: 32
         height: 32
       alignment: 0
@@ -3132,8 +3132,8 @@ TextureImporter:
       name: thatched-roof - Copy_144
       rect:
         serializedVersion: 2
-        x: 192
-        y: 96
+        x: 160
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -3153,8 +3153,8 @@ TextureImporter:
       name: thatched-roof - Copy_145
       rect:
         serializedVersion: 2
-        x: 224
-        y: 96
+        x: 192
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -3174,8 +3174,8 @@ TextureImporter:
       name: thatched-roof - Copy_146
       rect:
         serializedVersion: 2
-        x: 256
-        y: 96
+        x: 224
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -3195,8 +3195,8 @@ TextureImporter:
       name: thatched-roof - Copy_147
       rect:
         serializedVersion: 2
-        x: 288
-        y: 96
+        x: 256
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -3216,8 +3216,8 @@ TextureImporter:
       name: thatched-roof - Copy_148
       rect:
         serializedVersion: 2
-        x: 320
-        y: 96
+        x: 416
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -3237,8 +3237,8 @@ TextureImporter:
       name: thatched-roof - Copy_149
       rect:
         serializedVersion: 2
-        x: 352
-        y: 96
+        x: 448
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -3258,8 +3258,8 @@ TextureImporter:
       name: thatched-roof - Copy_150
       rect:
         serializedVersion: 2
-        x: 384
-        y: 96
+        x: 480
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -3279,7 +3279,7 @@ TextureImporter:
       name: thatched-roof - Copy_151
       rect:
         serializedVersion: 2
-        x: 416
+        x: 160
         y: 96
         width: 32
         height: 32
@@ -3300,7 +3300,7 @@ TextureImporter:
       name: thatched-roof - Copy_152
       rect:
         serializedVersion: 2
-        x: 448
+        x: 192
         y: 96
         width: 32
         height: 32
@@ -3321,7 +3321,7 @@ TextureImporter:
       name: thatched-roof - Copy_153
       rect:
         serializedVersion: 2
-        x: 480
+        x: 224
         y: 96
         width: 32
         height: 32
@@ -3342,8 +3342,8 @@ TextureImporter:
       name: thatched-roof - Copy_154
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 256
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -3363,8 +3363,8 @@ TextureImporter:
       name: thatched-roof - Copy_155
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 288
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -3384,8 +3384,8 @@ TextureImporter:
       name: thatched-roof - Copy_156
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 320
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -3405,8 +3405,8 @@ TextureImporter:
       name: thatched-roof - Copy_157
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
+        x: 352
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -3426,8 +3426,8 @@ TextureImporter:
       name: thatched-roof - Copy_158
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
+        x: 384
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -3447,8 +3447,8 @@ TextureImporter:
       name: thatched-roof - Copy_159
       rect:
         serializedVersion: 2
-        x: 160
-        y: 64
+        x: 416
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -3468,8 +3468,8 @@ TextureImporter:
       name: thatched-roof - Copy_160
       rect:
         serializedVersion: 2
-        x: 192
-        y: 64
+        x: 448
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -3489,7 +3489,7 @@ TextureImporter:
       name: thatched-roof - Copy_161
       rect:
         serializedVersion: 2
-        x: 256
+        x: 160
         y: 64
         width: 32
         height: 32
@@ -3510,7 +3510,7 @@ TextureImporter:
       name: thatched-roof - Copy_162
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 64
         width: 32
         height: 32
@@ -3531,7 +3531,7 @@ TextureImporter:
       name: thatched-roof - Copy_163
       rect:
         serializedVersion: 2
-        x: 320
+        x: 256
         y: 64
         width: 32
         height: 32
@@ -3552,7 +3552,7 @@ TextureImporter:
       name: thatched-roof - Copy_164
       rect:
         serializedVersion: 2
-        x: 352
+        x: 288
         y: 64
         width: 32
         height: 32
@@ -3573,7 +3573,7 @@ TextureImporter:
       name: thatched-roof - Copy_165
       rect:
         serializedVersion: 2
-        x: 384
+        x: 320
         y: 64
         width: 32
         height: 32
@@ -3594,7 +3594,7 @@ TextureImporter:
       name: thatched-roof - Copy_166
       rect:
         serializedVersion: 2
-        x: 416
+        x: 352
         y: 64
         width: 32
         height: 32
@@ -3615,7 +3615,7 @@ TextureImporter:
       name: thatched-roof - Copy_167
       rect:
         serializedVersion: 2
-        x: 448
+        x: 384
         y: 64
         width: 32
         height: 32
@@ -3636,8 +3636,8 @@ TextureImporter:
       name: thatched-roof - Copy_168
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 416
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -3657,7 +3657,7 @@ TextureImporter:
       name: thatched-roof - Copy_169
       rect:
         serializedVersion: 2
-        x: 32
+        x: 96
         y: 32
         width: 32
         height: 32
@@ -3678,7 +3678,7 @@ TextureImporter:
       name: thatched-roof - Copy_170
       rect:
         serializedVersion: 2
-        x: 96
+        x: 128
         y: 32
         width: 32
         height: 32
@@ -3699,7 +3699,7 @@ TextureImporter:
       name: thatched-roof - Copy_171
       rect:
         serializedVersion: 2
-        x: 128
+        x: 160
         y: 32
         width: 32
         height: 32
@@ -3720,7 +3720,7 @@ TextureImporter:
       name: thatched-roof - Copy_172
       rect:
         serializedVersion: 2
-        x: 160
+        x: 192
         y: 32
         width: 32
         height: 32
@@ -3930,7 +3930,7 @@ TextureImporter:
       name: thatched-roof - Copy_182
       rect:
         serializedVersion: 2
-        x: 0
+        x: 96
         y: 0
         width: 32
         height: 32
@@ -3951,7 +3951,7 @@ TextureImporter:
       name: thatched-roof - Copy_183
       rect:
         serializedVersion: 2
-        x: 32
+        x: 128
         y: 0
         width: 32
         height: 32
@@ -3972,7 +3972,7 @@ TextureImporter:
       name: thatched-roof - Copy_184
       rect:
         serializedVersion: 2
-        x: 128
+        x: 160
         y: 0
         width: 32
         height: 32
@@ -3993,7 +3993,7 @@ TextureImporter:
       name: thatched-roof - Copy_185
       rect:
         serializedVersion: 2
-        x: 224
+        x: 192
         y: 0
         width: 32
         height: 32
@@ -4014,7 +4014,7 @@ TextureImporter:
       name: thatched-roof - Copy_186
       rect:
         serializedVersion: 2
-        x: 256
+        x: 224
         y: 0
         width: 32
         height: 32
@@ -4035,7 +4035,7 @@ TextureImporter:
       name: thatched-roof - Copy_187
       rect:
         serializedVersion: 2
-        x: 288
+        x: 256
         y: 0
         width: 32
         height: 32
