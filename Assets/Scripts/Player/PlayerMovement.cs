@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,7 +17,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveToPosition;
 
 
-    void Update()
+
+    private void Update()
     {
         //Input
         movement.x = Input.GetAxisRaw("Horizontal");
@@ -33,20 +35,23 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
+            //Debug.Log(obstacles.GetTile(obstacleTile).name);
+
             //checking if it is a ledge
             switch (obstacles.GetTile(obstacleTile).name)
             {
                 case "base_out_atlas_296":
-                    if (movement.y == -1)
+                    if ((movement.y == -1 || movement.x == -1) && Input.GetKeyDown(KeyCode.Space))
                     {
-                        GetComponentInParent<Animation>().Play();
                         StartCoroutine(DisableCollider(ledgeCollider, 1f));
+                        StartCoroutine(Jump(movement));
                     }
                     break;
                 case "terrain_atlas_300":
-                    if (movement.x == -1)
+                    if ((movement.x == -1 || movement.y == -1) && Input.GetKeyDown(KeyCode.Space))
                     {
-                        StartCoroutine(DisableCollider(ledgeCollider, 0.5f));
+                        StartCoroutine(DisableCollider(ledgeCollider, 1f));
+                        StartCoroutine(Jump(movement));
                     }
                     break;
                 case null:
@@ -73,5 +78,18 @@ public class PlayerMovement : MonoBehaviour
         collider.enabled = false;
         yield return new WaitForSeconds(time);
         collider.enabled = true;
+    }
+
+    IEnumerator Jump(Vector2 direction)
+    {
+        float multiplier;
+
+        if (direction.x == -1)
+            multiplier = 1.5f;
+        else
+            multiplier = 2.5f;
+
+        var jumpDest = transform.position + new Vector3(direction.x, direction.y) * multiplier;
+        yield return transform.DOJump(jumpDest, 0.3f, 1, 0.5f).WaitForCompletion();
     }
 }
