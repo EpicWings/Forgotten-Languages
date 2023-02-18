@@ -9,13 +9,13 @@ public class InventoryPage : MonoBehaviour
     public Inventory_Item itemPrefab;
     public RectTransform contentPanel;
     public InventoryDescription description;
+    public DragItem dragItem;
 
     public Sprite image, image2;
     public int level;
     public string itemDescription;
-    private int currentDraggedItemIndex = -1;
 
-    public DragItem dragItem;
+    private int currentDraggedItemIndex = -1;
 
     List<Inventory_Item> listOfItems = new List<Inventory_Item>();
 
@@ -43,6 +43,9 @@ public class InventoryPage : MonoBehaviour
     public void HandleItemSelection(Inventory_Item inventoryItem)
     {
         description.SetDescription(inventoryItem.name, itemDescription);
+        //print item index
+        Debug.Log(listOfItems.IndexOf(inventoryItem));
+
     }
 
     public void HandleEndDrag(Inventory_Item inventoryItem)
@@ -88,5 +91,4 @@ public class InventoryPage : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
-
 }

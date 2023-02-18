@@ -6,7 +6,7 @@ public class InventoryController : MonoBehaviour
 {
     public InventoryPage inventory;
 
-    private int inventorySize = 8;
+    private int inventorySize = 9;
 
     private void Start()
     {

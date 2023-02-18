@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class Inventory_Item : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEndDragHandler, IDropHandler, IDragHandler
 {
+
     public Image itemImage;
     public Text itemLevel;
 
@@ -45,10 +46,10 @@ public class Inventory_Item : MonoBehaviour, IPointerClickHandler, IBeginDragHan
 
     public void OnPointerClick(PointerEventData pointerEventData)
     {
-        if (empty)
+        /*if (empty)
         {
             return;
-        }
+        }*/
         if (pointerEventData.button == PointerEventData.InputButton.Left)
         {
             OnItemClicked?.Invoke(this);
