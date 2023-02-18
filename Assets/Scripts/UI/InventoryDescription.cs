@@ -7,6 +7,12 @@ public class InventoryDescription : MonoBehaviour
 {
     public Text description;
 
+    private void Awake()
+    {
+        ResetDescription();
+
+    }
+
     public void Show()
     {
         gameObject.SetActive(true);
@@ -15,6 +21,11 @@ public class InventoryDescription : MonoBehaviour
     public void Hide()
     {
         gameObject.SetActive(false);
+    }
+
+    public void ResetDescription()
+    {
+        description.text = "";
     }
 
     public void SetDescription(string itemName, string itemDescription)

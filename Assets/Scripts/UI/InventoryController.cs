@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class InventoryController : MonoBehaviour
 {
-    public Inventory inventory;
+    public InventoryPage inventory;
 
-    private int inventorySize = 9;
+    private int inventorySize = 8;
 
     private void Start()
     {
-        inventory.InitializeInvetory(inventorySize);
+        inventory.InitializeInventory(inventorySize);
     }
 
     public void Update()
     {
-
+        inventory.Show();
     }
 
 }
