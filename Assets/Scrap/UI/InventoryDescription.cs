@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class InventoryDescription : MonoBehaviour
 {
+    public Image descriptionImage;
     public Text description;
 
     private void Awake()
@@ -25,6 +26,7 @@ public class InventoryDescription : MonoBehaviour
 
     public void ResetDescription()
     {
+        //descriptionImage.sprite = null;
         description.text = "";
     }
 

@@ -5,13 +5,14 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Inventory_Item : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEndDragHandler, IDropHandler, IDragHandler
+public class UIInventoryItem : MonoBehaviour, IPointerClickHandler, IBeginDragHandler, IEndDragHandler, IDropHandler, IDragHandler
 {
 
     public Image itemImage;
+    public Image itemLevelBorder;
     public Text itemLevel;
 
-    public event Action<Inventory_Item> OnItemClicked, OnItemDroppedOn, OnItemBeginDrag, OnItemEndDrag;
+    public event Action<UIInventoryItem> OnItemClicked, OnItemDroppedOn, OnItemBeginDrag, OnItemEndDrag;
 
     private bool empty = true;
 
@@ -23,7 +24,9 @@ public class Inventory_Item : MonoBehaviour, IPointerClickHandler, IBeginDragHan
 
     public void ResetData()
     {
-        this.itemImage.gameObject.SetActive(false);
+        itemImage.sprite = null;
+        itemLevel.text = "";
+        itemLevelBorder.gameObject.SetActive(false);
         empty = true;
     }
 
@@ -36,20 +39,17 @@ public class Inventory_Item : MonoBehaviour, IPointerClickHandler, IBeginDragHan
     {
 
     }
+
     public void SetData(Sprite sprite, int level)
     {
-        this.itemImage.gameObject.SetActive(true);
-        this.itemImage.sprite = sprite;
-        this.itemLevel.text = level.ToString();
+        itemImage.sprite = sprite;
+        itemLevel.text = level.ToString();
+        itemLevelBorder.gameObject.SetActive(true);
         empty = false;
     }
 
     public void OnPointerClick(PointerEventData pointerEventData)
     {
-        /*if (empty)
-        {
-            return;
-        }*/
         if (pointerEventData.button == PointerEventData.InputButton.Left)
         {
             OnItemClicked?.Invoke(this);
@@ -79,4 +79,5 @@ public class Inventory_Item : MonoBehaviour, IPointerClickHandler, IBeginDragHan
     {
 
     }
+
 }

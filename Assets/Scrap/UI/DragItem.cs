@@ -8,17 +8,17 @@ public class DragItem : MonoBehaviour
     private Canvas canvas;
 
     [SerializeField]
-    private Inventory_Item item;
+    private UIInventoryItem item;
 
     public void Awake()
     {
         canvas = transform.root.GetComponent<Canvas>();
-        item = GetComponentInChildren<Inventory_Item>();
+        item = GetComponentInChildren<UIInventoryItem>();
     }
 
-    public void SetData(Sprite sprite, int quantity)
+    public void SetData(Sprite sprite, int level)
     {
-        item.SetData(sprite, quantity);
+        item.SetData(sprite, level);
     }
     void Update()
     {

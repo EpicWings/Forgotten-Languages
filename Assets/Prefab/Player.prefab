@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 7920830576485958433}
   - component: {fileID: 7920830576485958438}
   - component: {fileID: 7920830576485958439}
-  - component: {fileID: 7920830576485958436}
   - component: {fileID: 7920830576485958437}
   - component: {fileID: 7920830576485958458}
-  - component: {fileID: 4437482956789208314}
+  - component: {fileID: 7920830576485958436}
+  - component: {fileID: 6042858085828379598}
+  - component: {fileID: 5146525924854484000}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -110,24 +111,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7920830576485958436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7920830576485958459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2e5e7f0e50198c45b4a9e0edcc0f5c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerBody: {fileID: 7920830576485958439}
-  speed: 10
-  animator: {fileID: 7920830576485958437}
-  obstacles: {fileID: 0}
-  ledgeCollider: {fileID: 0}
-  playerCollider: {fileID: 7920830576485958458}
 --- !u!95 &7920830576485958437
 Animator:
   serializedVersion: 5
@@ -164,7 +147,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.9375, y: 1.46875}
   m_Direction: 0
---- !u!114 &4437482956789208314
+--- !u!114 &7920830576485958436
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,7 +156,44 @@ MonoBehaviour:
   m_GameObject: {fileID: 7920830576485958459}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53fb499bc5497fb4baad722f6fcbafbb, type: 3}
+  m_Script: {fileID: 11500000, guid: d2e5e7f0e50198c45b4a9e0edcc0f5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
+  playerBody: {fileID: 7920830576485958439}
+  speed: 10
+  animator: {fileID: 7920830576485958437}
+  obstacles: {fileID: 0}
+  ledgeCollider: {fileID: 0}
+  playerCollider: {fileID: 7920830576485958458}
+--- !u!114 &6042858085828379598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7920830576485958459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41576fc5c3a51964e87502399975a3b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  xpBar: {fileID: 0}
+  maxHealth: 100
+  currentHealth: 0
+  maxXP: 100
+  currentXP: 0
+--- !u!114 &5146525924854484000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7920830576485958459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c59f95ecd5def5e4f969e50e32e530e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 0}
+  stats: {fileID: 0}
