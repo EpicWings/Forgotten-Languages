@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf62cf8b6d4d98640a3aee3375ff006f, type: 3}
   m_Name: Shield
   m_EditorClassIdentifier: 
-  <isStackable>k__BackingField: 0
-  <maxStack>k__BackingField: 1
+  <Sprite>k__BackingField: {fileID: 1835831967, guid: b761b49945dc9054b938dda2c6ed1dd2, type: 3}
   <Name>k__BackingField: Shield
+  <IsStackable>k__BackingField: 0
+  <MaxStack>k__BackingField: 1
   <Description>k__BackingField: Amazing
-  <Icon>k__BackingField: {fileID: 262023740, guid: 585c91acd5607bc44bc3d2cba0c49351, type: 3}

@@ -12607,6 +12607,7 @@ GameObject:
   - component: {fileID: 630812749}
   - component: {fileID: 630812748}
   - component: {fileID: 630812747}
+  - component: {fileID: 630812750}
   m_Layer: 5
   m_Name: InventoryContent
   m_TagString: Untagged
@@ -12696,6 +12697,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630812745}
   m_CullTransparentMesh: 1
+--- !u!114 &630812750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630812745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46172e1797900da4c95bbbcf6bbbcc73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 630812746}
+  itemPrefab: {fileID: 5187514850092980778, guid: ba3bc5ac0fc946b4687a45b73cd5db3a, type: 3}
+  descriptionOfItem: {fileID: 1494599931}
 --- !u!1 &639315094
 GameObject:
   m_ObjectHideFlags: 0
@@ -14980,6 +14996,7 @@ GameObject:
   - component: {fileID: 758597525}
   - component: {fileID: 758597527}
   - component: {fileID: 758597526}
+  - component: {fileID: 758597528}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -15052,6 +15069,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758597524}
   m_CullTransparentMesh: 1
+--- !u!114 &758597528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758597524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871074b6bc28aad42b318a3d2ba8cdf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryPrefab: {fileID: 630812750}
+  item: {fileID: 11400000, guid: 92800c5bda45b4c46909984e13d65c7f, type: 2}
+  item2: {fileID: 11400000, guid: 9a7eac1d62a4a3f4cab26af4b52a264f, type: 2}
 --- !u!1 &768285939
 GameObject:
   m_ObjectHideFlags: 0
@@ -15064,7 +15096,7 @@ GameObject:
   - component: {fileID: 768285942}
   - component: {fileID: 768285941}
   m_Layer: 5
-  m_Name: TextDescription
+  m_Name: InvTextDescription
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24945,6 +24977,7 @@ GameObject:
   - component: {fileID: 1070147642}
   - component: {fileID: 1070147641}
   - component: {fileID: 1070147640}
+  - component: {fileID: 1070147643}
   m_Layer: 5
   m_Name: EquipmentDescription
   m_TagString: Untagged
@@ -25037,6 +25070,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070147638}
   m_CullTransparentMesh: 1
+--- !u!114 &1070147643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070147638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3a2049b4998b541ad8d05e43b19d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descriptionImage: {fileID: 1070147641}
+  descriptionText: {fileID: 1779089111}
 --- !u!1 &1085888035
 GameObject:
   m_ObjectHideFlags: 0
@@ -28918,6 +28965,7 @@ GameObject:
   - component: {fileID: 1494599930}
   - component: {fileID: 1494599929}
   - component: {fileID: 1494599928}
+  - component: {fileID: 1494599931}
   m_Layer: 5
   m_Name: InventoryDescription
   m_TagString: Untagged
@@ -29010,6 +29058,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494599926}
   m_CullTransparentMesh: 1
+--- !u!114 &1494599931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494599926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3a2049b4998b541ad8d05e43b19d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  descriptionImage: {fileID: 1494599929}
+  descriptionText: {fileID: 768285941}
 --- !u!1 &1503131247
 GameObject:
   m_ObjectHideFlags: 0
@@ -31481,7 +31543,7 @@ GameObject:
   - component: {fileID: 1779089112}
   - component: {fileID: 1779089111}
   m_Layer: 5
-  m_Name: TextDescription
+  m_Name: EquipTextDescription
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
