@@ -5,6 +5,7 @@ using UnityEngine;
 public class UIInventoryController : MonoBehaviour
 {
     public UIInventory inventoryPrefab;
+    public EquipInventory equipmentPrefab;
     public ItemScriptableObj item;
     public ItemScriptableObj item2;
 
@@ -12,11 +13,17 @@ public class UIInventoryController : MonoBehaviour
     private const int maxInventory = 7;
     public void Start()
     {
-        Debug.Log("Start");
+        equipmentPrefab.descriptionOfItem.Hide();
         inventoryPrefab.descriptionOfItem.Hide();
+        equipmentPrefab.InitializeEquipment();
         inventoryPrefab.InitializeInventory(maxInventory);
         inventoryPrefab.AddItem(item.Sprite, 1, item.Description);
         inventoryPrefab.AddItem(item2.Sprite, 1, item2.Description);
+
+    }
+
+    public void Update()
+    {
 
     }
 }

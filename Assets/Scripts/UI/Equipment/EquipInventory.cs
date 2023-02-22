@@ -3,27 +3,42 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIInventory : MonoBehaviour
+public class EquipInventory : MonoBehaviour
 {
+    public UIInventory inventory;
     public RectTransform canvas;
     public UIItem itemPrefab;
     public UIDescription descriptionOfItem;
     public DragDrop dragDrop;
-    public int currentIndex = -1;
-    public List<UIItem> listOfItems = new List<UIItem>();
+
+    private int currentIndex = -1;
+    private List<UIItem> listOfEquip = new List<UIItem>();
+    private readonly List<string> EquipmentOrder = new()
+    {
+        "Helmet",
+        "Chest",
+        "Boots",
+        "Weapon",
+        "Ring",
+        "Necklace",
+        "Potion",
+        "Shield",
+        "Bracelet"
+    };
 
     private void Awake()
     {
         dragDrop.Toggle(false);
     }
 
-    public void InitializeInventory(int size)
+    public void InitializeEquipment(int size = 9)
     {
         for (int i = 0; i < size; i++)
         {
             UIItem item = Instantiate(itemPrefab, transform);
             item.Default();
-            listOfItems.Add(item);
+            item.itemName = EquipmentOrder[i];
+            listOfEquip.Add(item);
             item.OnItemHoverOn += ShowDescription;
             item.OnItemHoverOff += HideDescription;
             item.OnItemDrag += DragItems;
@@ -45,7 +60,7 @@ public class UIInventory : MonoBehaviour
         item.OnItemDroppedOn += DropItem;
         item.OnItemClicked += ClickItem;
         item.SetData(sprite, level, description);
-        listOfItems.Add(item);
+        listOfEquip.Add(item);
     }
 
 
@@ -78,14 +93,14 @@ public class UIInventory : MonoBehaviour
     private void DropItem(UIItem obj)
     {
         Debug.Log("Dropped");
-        int index1 = listOfItems.IndexOf(obj);
-        if (index1 != -1)
+        int index1 = listOfEquip.IndexOf(obj);
+
+        if (listOfEquip[index1].itemName == inventory.listOfItems[inventory.currentIndex].itemName)
         {
-            if (index1 != currentIndex)
-            {
-                SwapItems(currentIndex, index1);
-            }
+            Debug.Log("Dropped on the same item");
+            return;
         }
+
     }
 
     private void DragItems(UIItem obj)
@@ -101,18 +116,18 @@ public class UIInventory : MonoBehaviour
 
     private void BeginDrag(UIItem obj)
     {
-        currentIndex = listOfItems.IndexOf(obj);
+        currentIndex = listOfEquip.IndexOf(obj);
         dragDrop.Toggle(true);
         dragDrop.SetData(obj.itemImage.sprite, Convert.ToInt32(obj.itemLevel.text), obj.itemDescription);
     }
 
     private void SwapItems(int index1, int index2)
     {
-        UIItem item1 = listOfItems[index1];
-        UIItem item2 = listOfItems[index2];
+        UIItem item1 = listOfEquip[index1];
+        UIItem item2 = listOfEquip[index2];
 
-        listOfItems[index1] = item2;
-        listOfItems[index2] = item1;
+        listOfEquip[index1] = item2;
+        listOfEquip[index2] = item1;
 
         item1.transform.SetSiblingIndex(index2);
         item2.transform.SetSiblingIndex(index1);
@@ -120,7 +135,7 @@ public class UIInventory : MonoBehaviour
 
     public void Reset()
     {
-        foreach (UIItem item in listOfItems)
+        foreach (UIItem item in listOfEquip)
         {
             Destroy(item.gameObject);
         }

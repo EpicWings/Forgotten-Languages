@@ -1,24 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class DragItem : MonoBehaviour
+public class DragDrop : MonoBehaviour
 {
     [SerializeField]
     private Canvas canvas;
 
     [SerializeField]
-    private UIInventoryItem item;
+    private UIItem item;
 
     public void Awake()
     {
         canvas = transform.root.GetComponent<Canvas>();
-        item = GetComponentInChildren<UIInventoryItem>();
+        item = GetComponentInChildren<UIItem>();
     }
 
-    public void SetData(Sprite sprite, int level)
+    public void SetData(Sprite sprite, int level, string description)
     {
-        item.SetData(sprite, level);
+        item.SetData(sprite, level, description);
     }
     void Update()
     {
@@ -34,7 +35,6 @@ public class DragItem : MonoBehaviour
 
     public void Toggle(bool val)
     {
-        Debug.Log($"Item toggled {val}");
         gameObject.SetActive(val);
     }
 }
