@@ -34,7 +34,7 @@ public class UIInventory : MonoBehaviour
         }
     }
 
-    public void AddItem(Sprite sprite, int level, string description)
+    public void AddItem(Sprite sprite, int level, string name, bool stackable, string description, int max)
     {
         var item = Instantiate(itemPrefab, canvas.transform);
         item.OnItemHoverOn += ShowDescription;
@@ -44,7 +44,7 @@ public class UIInventory : MonoBehaviour
         item.OnItemEndDrag += EndDrag;
         item.OnItemDroppedOn += DropItem;
         item.OnItemClicked += ClickItem;
-        item.SetData(sprite, level, description);
+        item.SetData(sprite, level, name, stackable, description, max);
         listOfItems.Add(item);
     }
 
@@ -77,7 +77,6 @@ public class UIInventory : MonoBehaviour
 
     private void DropItem(UIItem obj)
     {
-        Debug.Log("Dropped");
         int index1 = listOfItems.IndexOf(obj);
         if (index1 != -1)
         {
@@ -103,7 +102,7 @@ public class UIInventory : MonoBehaviour
     {
         currentIndex = listOfItems.IndexOf(obj);
         dragDrop.Toggle(true);
-        dragDrop.SetData(obj.itemImage.sprite, Convert.ToInt32(obj.itemLevel.text), obj.itemDescription);
+        dragDrop.SetData(obj.itemImage.sprite, Convert.ToInt32(obj.itemLevel.text), obj.itemName, obj.isStackable, obj.itemDescription, obj.maxStack);
     }
 
     private void SwapItems(int index1, int index2)

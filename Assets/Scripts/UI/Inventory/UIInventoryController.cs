@@ -17,9 +17,8 @@ public class UIInventoryController : MonoBehaviour
         inventoryPrefab.descriptionOfItem.Hide();
         equipmentPrefab.InitializeEquipment();
         inventoryPrefab.InitializeInventory(maxInventory);
-        inventoryPrefab.AddItem(item.Sprite, 1, item.Description);
-        inventoryPrefab.AddItem(item2.Sprite, 1, item2.Description);
-
+        inventoryPrefab.AddItem(item.Sprite, 1, item.Name, item.IsStackable, item.Description, item.MaxStack);
+        inventoryPrefab.AddItem(item2.Sprite, 1, item2.Name, item2.IsStackable, item2.Description, item2.MaxStack);
     }
 
     public void Update()

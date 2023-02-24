@@ -17,9 +17,9 @@ public class DragDrop : MonoBehaviour
         item = GetComponentInChildren<UIItem>();
     }
 
-    public void SetData(Sprite sprite, int level, string description)
+    public void SetData(Sprite sprite, int level, string name, bool stackable, string description, int max)
     {
-        item.SetData(sprite, level, description);
+        item.SetData(sprite, level, name, stackable, description, max);
     }
     void Update()
     {

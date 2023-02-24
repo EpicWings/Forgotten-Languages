@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sword
   m_EditorClassIdentifier: 
   <Sprite>k__BackingField: {fileID: -695850704, guid: 585c91acd5607bc44bc3d2cba0c49351, type: 3}
-  <Name>k__BackingField: Sword
+  <Name>k__BackingField: Weapon
   <IsStackable>k__BackingField: 0
   <MaxStack>k__BackingField: 1
   <Description>k__BackingField: AMAZING AS ALWAYS

@@ -30,13 +30,16 @@ public class UIItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
         OnItemHoverOff?.Invoke(this);
     }
 
-    public void SetData(Sprite sprite, int level, string description)
+    public void SetData(Sprite sprite, int level, string name, bool stackable, string description, int max)
     {
         itemImage.sprite = sprite;
         itemImage.color = new Color(255, 255, 255, 255);
         itemLevel.text = level.ToString();
         itemLevelBorder.gameObject.SetActive(true);
+        itemName = name;
+        isStackable = stackable;
         itemDescription = description;
+        maxStack = max;
 
         empty = false;
     }
@@ -47,6 +50,10 @@ public class UIItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
         itemImage.color = Color.clear;
         itemLevel.text = "";
         itemLevelBorder.gameObject.SetActive(false);
+        itemName = "";
+        isStackable = false;
+        itemDescription = "";
+        maxStack = 0;
     }
 
     public void OnBeginDrag(PointerEventData eventData)

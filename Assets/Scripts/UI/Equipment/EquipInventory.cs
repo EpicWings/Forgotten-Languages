@@ -2,16 +2,22 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class EquipInventory : MonoBehaviour
+public class EquipInventory : MonoBehaviour, IDropHandler
 {
     public UIInventory inventory;
     public RectTransform canvas;
     public UIItem itemPrefab;
     public UIDescription descriptionOfItem;
     public DragDrop dragDrop;
+    public event EventHandler<ItemDroppedEventArgs> OnItemDropped;
+    public class ItemDroppedEventArgs : EventArgs
+    {
+        public UIItem item;
+    }
+    public EquipInventory equipInventory;
 
-    private int currentIndex = -1;
     private List<UIItem> listOfEquip = new List<UIItem>();
     private readonly List<string> EquipmentOrder = new()
     {
@@ -41,25 +47,16 @@ public class EquipInventory : MonoBehaviour
             listOfEquip.Add(item);
             item.OnItemHoverOn += ShowDescription;
             item.OnItemHoverOff += HideDescription;
-            item.OnItemDrag += DragItems;
-            item.OnItemBeginDrag += BeginDrag;
-            item.OnItemEndDrag += EndDrag;
-            item.OnItemDroppedOn += DropItem;
-            item.OnItemClicked += ClickItem;
+            equipInventory.OnItemDropped += DropItem;
         }
     }
 
-    public void AddItem(Sprite sprite, int level, string description)
+    public void AddItem(Sprite sprite, int level, string name, bool stackable, string description, int max)
     {
         var item = Instantiate(itemPrefab, canvas.transform);
         item.OnItemHoverOn += ShowDescription;
         item.OnItemHoverOff += HideDescription;
-        item.OnItemDrag += DragItems;
-        item.OnItemBeginDrag += BeginDrag;
-        item.OnItemEndDrag += EndDrag;
-        item.OnItemDroppedOn += DropItem;
-        item.OnItemClicked += ClickItem;
-        item.SetData(sprite, level, description);
+        item.SetData(sprite, level, name, stackable, description, max);
         listOfEquip.Add(item);
     }
 
@@ -82,55 +79,20 @@ public class EquipInventory : MonoBehaviour
         }
     }
 
-    private void ClickItem(UIItem obj)
+
+
+    private void EquipItem(int equipIndex, int inventoryIndex)
     {
-        if (obj.itemImage.sprite != null)
+        if (equipIndex >= 0 && equipIndex < listOfEquip.Count)
         {
+            if (inventoryIndex >= 0 && inventoryIndex < inventory.listOfItems.Count)
+            {
+                UIItem equipItem = listOfEquip[equipIndex];
+                UIItem inventoryItem = inventory.listOfItems[inventoryIndex];
+
+                equipItem.SetData(inventoryItem.itemImage.sprite, 2, inventoryItem.itemName, inventoryItem.isStackable, inventoryItem.itemDescription, inventoryItem.maxStack);
+            }
         }
-    }
-
-
-    private void DropItem(UIItem obj)
-    {
-        Debug.Log("Dropped");
-        int index1 = listOfEquip.IndexOf(obj);
-
-        if (listOfEquip[index1].itemName == inventory.listOfItems[inventory.currentIndex].itemName)
-        {
-            Debug.Log("Dropped on the same item");
-            return;
-        }
-
-    }
-
-    private void DragItems(UIItem obj)
-    {
-
-    }
-
-    private void EndDrag(UIItem obj)
-    {
-
-        dragDrop.Toggle(false);
-    }
-
-    private void BeginDrag(UIItem obj)
-    {
-        currentIndex = listOfEquip.IndexOf(obj);
-        dragDrop.Toggle(true);
-        dragDrop.SetData(obj.itemImage.sprite, Convert.ToInt32(obj.itemLevel.text), obj.itemDescription);
-    }
-
-    private void SwapItems(int index1, int index2)
-    {
-        UIItem item1 = listOfEquip[index1];
-        UIItem item2 = listOfEquip[index2];
-
-        listOfEquip[index1] = item2;
-        listOfEquip[index2] = item1;
-
-        item1.transform.SetSiblingIndex(index2);
-        item2.transform.SetSiblingIndex(index1);
     }
 
     public void Reset()
@@ -140,4 +102,72 @@ public class EquipInventory : MonoBehaviour
             Destroy(item.gameObject);
         }
     }
+
+    public void OnDrop(PointerEventData eventData)
+    {
+        if (eventData.pointerDrag != null)
+        {
+            UIItem item = eventData.pointerDrag.GetComponent<UIItem>();
+            if (item != null)
+            {
+                if (item.itemImage.sprite != null)
+                {
+                    int equipIndex = listOfEquip.FindIndex(x => x.itemName == item.itemName);
+                    int inventoryIndex = inventory.listOfItems.FindIndex(x => x.itemName == item.itemName);
+                    Debug.Log("EquipIndex: " + equipIndex);
+                    Debug.Log("InventoryIndex: " + inventoryIndex);
+                    if (equipIndex != -1)
+                    {
+                        EquipItem(equipIndex, inventoryIndex);
+                    }
+                    else
+                    {
+                        Debug.Log("No such item in equipment");
+                    }
+                }
+            }
+        }
+    }
+
+    private void DropItem(object sender, ItemDroppedEventArgs e)
+    {
+        Debug.Log(e.item.itemName);
+        /*if (e.item.itemName == "Helmet")
+        {
+            EquipItem(0, inventory.currentIndex);
+        }
+        else if (e.item.itemName == "Chest")
+        {
+            EquipItem(1, inventory.currentIndex);
+        }
+        else if (e.item.itemName == "Boots")
+        {
+            EquipItem(2, inventory.currentIndex);
+        }
+        else if (e.item.itemName == "Weapon")
+        {
+            EquipItem(3, inventory.currentIndex);
+        }
+        else if (e.item.itemName == "Ring")
+        {
+            EquipItem(4, inventory.currentIndex);
+        }
+        else if (e.item.itemName == "Necklace")
+        {
+            EquipItem(5, inventory.currentIndex);
+        }
+        else if (e.item.itemName == "Potion")
+        {
+            EquipItem(6, inventory.currentIndex);
+        }
+        else if (e.item.itemName == "Shield")
+        {
+            EquipItem(7, inventory.currentIndex);
+        }
+        else if (e.item.itemName == "Bracelet")
+        {
+            EquipItem(8, inventory.currentIndex);
+        }*/
+    }
+
 }
