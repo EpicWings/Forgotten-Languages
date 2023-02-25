@@ -21,6 +21,11 @@ public class DragDrop : MonoBehaviour
     {
         item.SetData(sprite, level, name, stackable, description, max);
     }
+
+    public void Default()
+    {
+        item.Default();
+    }
     void Update()
     {
         Vector2 position;

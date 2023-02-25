@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf62cf8b6d4d98640a3aee3375ff006f, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: -695850704, guid: 585c91acd5607bc44bc3d2cba0c49351, type: 3}
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 3f09a264323d18d4b9ad13de02af1421, type: 3}
   <Name>k__BackingField: Weapon
   <IsStackable>k__BackingField: 0
   <MaxStack>k__BackingField: 1

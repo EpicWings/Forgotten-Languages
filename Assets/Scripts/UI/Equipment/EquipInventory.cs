@@ -11,14 +11,9 @@ public class EquipInventory : MonoBehaviour, IDropHandler
     public UIItem itemPrefab;
     public UIDescription descriptionOfItem;
     public DragDrop dragDrop;
-    public event EventHandler<ItemDroppedEventArgs> OnItemDropped;
-    public class ItemDroppedEventArgs : EventArgs
-    {
-        public UIItem item;
-    }
     public EquipInventory equipInventory;
+    public List<UIItem> listOfEquip = new List<UIItem>();
 
-    private List<UIItem> listOfEquip = new List<UIItem>();
     private readonly List<string> EquipmentOrder = new()
     {
         "Helmet",
@@ -47,7 +42,6 @@ public class EquipInventory : MonoBehaviour, IDropHandler
             listOfEquip.Add(item);
             item.OnItemHoverOn += ShowDescription;
             item.OnItemHoverOff += HideDescription;
-            equipInventory.OnItemDropped += DropItem;
         }
     }
 
@@ -61,7 +55,7 @@ public class EquipInventory : MonoBehaviour, IDropHandler
     }
 
 
-    private void HideDescription(UIItem obj)
+    public void HideDescription(UIItem obj)
     {
         if (obj.itemImage.sprite != null)
         {
@@ -70,7 +64,7 @@ public class EquipInventory : MonoBehaviour, IDropHandler
         }
     }
 
-    private void ShowDescription(UIItem obj)
+    public void ShowDescription(UIItem obj)
     {
         if (obj.itemImage.sprite != null)
         {
@@ -90,7 +84,11 @@ public class EquipInventory : MonoBehaviour, IDropHandler
                 UIItem equipItem = listOfEquip[equipIndex];
                 UIItem inventoryItem = inventory.listOfItems[inventoryIndex];
 
-                equipItem.SetData(inventoryItem.itemImage.sprite, 2, inventoryItem.itemName, inventoryItem.isStackable, inventoryItem.itemDescription, inventoryItem.maxStack);
+                equipItem.SetData(inventoryItem.itemImage.sprite, Convert.ToInt32(inventoryItem.itemLevel),
+                                  inventoryItem.itemName, inventoryItem.isStackable, inventoryItem.itemDescription, inventoryItem.maxStack);
+                RemoveAlpha(equipItem);
+
+                inventoryItem.Default();
             }
         }
     }
@@ -114,8 +112,6 @@ public class EquipInventory : MonoBehaviour, IDropHandler
                 {
                     int equipIndex = listOfEquip.FindIndex(x => x.itemName == item.itemName);
                     int inventoryIndex = inventory.listOfItems.FindIndex(x => x.itemName == item.itemName);
-                    Debug.Log("EquipIndex: " + equipIndex);
-                    Debug.Log("InventoryIndex: " + inventoryIndex);
                     if (equipIndex != -1)
                     {
                         EquipItem(equipIndex, inventoryIndex);
@@ -129,45 +125,14 @@ public class EquipInventory : MonoBehaviour, IDropHandler
         }
     }
 
-    private void DropItem(object sender, ItemDroppedEventArgs e)
+    private void RemoveAlpha(UIItem item)
     {
-        Debug.Log(e.item.itemName);
-        /*if (e.item.itemName == "Helmet")
-        {
-            EquipItem(0, inventory.currentIndex);
-        }
-        else if (e.item.itemName == "Chest")
-        {
-            EquipItem(1, inventory.currentIndex);
-        }
-        else if (e.item.itemName == "Boots")
-        {
-            EquipItem(2, inventory.currentIndex);
-        }
-        else if (e.item.itemName == "Weapon")
-        {
-            EquipItem(3, inventory.currentIndex);
-        }
-        else if (e.item.itemName == "Ring")
-        {
-            EquipItem(4, inventory.currentIndex);
-        }
-        else if (e.item.itemName == "Necklace")
-        {
-            EquipItem(5, inventory.currentIndex);
-        }
-        else if (e.item.itemName == "Potion")
-        {
-            EquipItem(6, inventory.currentIndex);
-        }
-        else if (e.item.itemName == "Shield")
-        {
-            EquipItem(7, inventory.currentIndex);
-        }
-        else if (e.item.itemName == "Bracelet")
-        {
-            EquipItem(8, inventory.currentIndex);
-        }*/
-    }
+        CanvasGroup canvasGroup = item.GetComponent<CanvasGroup>();
+        canvasGroup.blocksRaycasts = true;
+        canvasGroup.alpha = 1;
+        canvasGroup.interactable = true;
+        item.itemImage.color = new Color(255, 255, 255, 255);
 
+    }
 }
+

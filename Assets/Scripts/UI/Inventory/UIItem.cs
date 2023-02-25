@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class UIItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IDropHandler, IPointerDownHandler
+public class UIItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IDropHandler
 {
     public Image itemImage;
     public Image itemLevelBorder;
@@ -16,7 +16,7 @@ public class UIItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     public string itemDescription;
     public int maxStack;
 
-    public event Action<UIItem> OnItemHoverOn, OnItemHoverOff, OnItemClicked, OnItemDroppedOn, OnItemBeginDrag, OnItemEndDrag, OnItemDrag;
+    public event Action<UIItem> OnItemHoverOn, OnItemHoverOff, OnItemClicked, OnItemDroppedOn, OnItemBeginDrag, OnItemEndDrag;
 
     private bool empty = true;
 
@@ -71,7 +71,7 @@ public class UIItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
 
     public void OnDrag(PointerEventData eventData)
     {
-        OnItemDrag?.Invoke(this);
+
     }
 
     public void OnDrop(PointerEventData eventData)

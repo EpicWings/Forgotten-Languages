@@ -11,6 +11,7 @@ public class UIInventory : MonoBehaviour
     public DragDrop dragDrop;
     public int currentIndex = -1;
     public List<UIItem> listOfItems = new List<UIItem>();
+    public EquipInventory equipInventory;
 
     private void Awake()
     {
@@ -26,11 +27,9 @@ public class UIInventory : MonoBehaviour
             listOfItems.Add(item);
             item.OnItemHoverOn += ShowDescription;
             item.OnItemHoverOff += HideDescription;
-            item.OnItemDrag += DragItems;
             item.OnItemBeginDrag += BeginDrag;
             item.OnItemEndDrag += EndDrag;
             item.OnItemDroppedOn += DropItem;
-            item.OnItemClicked += ClickItem;
         }
     }
 
@@ -39,11 +38,9 @@ public class UIInventory : MonoBehaviour
         var item = Instantiate(itemPrefab, canvas.transform);
         item.OnItemHoverOn += ShowDescription;
         item.OnItemHoverOff += HideDescription;
-        item.OnItemDrag += DragItems;
         item.OnItemBeginDrag += BeginDrag;
         item.OnItemEndDrag += EndDrag;
         item.OnItemDroppedOn += DropItem;
-        item.OnItemClicked += ClickItem;
         item.SetData(sprite, level, name, stackable, description, max);
         listOfItems.Add(item);
     }
@@ -55,6 +52,12 @@ public class UIInventory : MonoBehaviour
         {
             descriptionOfItem.Hide();
             descriptionOfItem.SetDescription("");
+
+            int equipIndex = equipInventory.listOfEquip.FindIndex(x => x.itemName == obj.itemName);
+            if (equipInventory.listOfEquip[equipIndex].itemImage.sprite != null)
+            {
+                equipInventory.HideDescription(equipInventory.listOfEquip[equipIndex]);
+            }
         }
     }
 
@@ -64,16 +67,14 @@ public class UIInventory : MonoBehaviour
         {
             descriptionOfItem.Show();
             descriptionOfItem.SetDescription(obj.itemDescription);
+
+            int equipIndex = equipInventory.listOfEquip.FindIndex(x => x.itemName == obj.itemName);
+            if (equipInventory.listOfEquip[equipIndex].itemImage.sprite != null)
+            {
+                equipInventory.ShowDescription(equipInventory.listOfEquip[equipIndex]);
+            }
         }
     }
-
-    private void ClickItem(UIItem obj)
-    {
-        if (obj.itemImage.sprite != null)
-        {
-        }
-    }
-
 
     private void DropItem(UIItem obj)
     {
@@ -87,15 +88,11 @@ public class UIInventory : MonoBehaviour
         }
     }
 
-    private void DragItems(UIItem obj)
-    {
-
-    }
-
     private void EndDrag(UIItem obj)
     {
 
         dragDrop.Toggle(false);
+        dragDrop.Default();
     }
 
     private void BeginDrag(UIItem obj)
