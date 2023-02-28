@@ -15304,9 +15304,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1297302dbfbf7c74fa589d9ba4e9f83a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemTexture: {fileID: 2800000, guid: a397f924f5642fb40a589f2f53dc89e4, type: 3}
-  rarityTexture: {fileID: 2800000, guid: 8adba5aa1b1f86b46b802e15b295ce12, type: 3}
-  path: Assets/Data/Sprites
+  itemSprites:
+  - {fileID: 21300000, guid: 3f09a264323d18d4b9ad13de02af1421, type: 3}
+  - {fileID: 21300000, guid: a397f924f5642fb40a589f2f53dc89e4, type: 3}
+  - {fileID: 21300000, guid: c84a1466cdc5a8b45a84cae8574bb188, type: 3}
+  - {fileID: 21300000, guid: 78307bab678b455468dae79627348483, type: 3}
+  - {fileID: 21300000, guid: ee482f4127fd55740ad3cff475e2c19e, type: 3}
+  - {fileID: 21300000, guid: 71bc4a465a7577f4a9acb54a68199191, type: 3}
+  - {fileID: 21300000, guid: 007fd11df3fb5d440b7c27077144d0f9, type: 3}
+  - {fileID: 21300000, guid: 584fb585e7523ed4fb046040a48e10b0, type: 3}
+  - {fileID: 21300000, guid: d1a8383796490174cb203409201c47bf, type: 3}
+  - {fileID: 21300000, guid: 5857be242908ffa47956719738f1a437, type: 3}
+  raritySprites:
+  - {fileID: 21300000, guid: 8adba5aa1b1f86b46b802e15b295ce12, type: 3}
+  - {fileID: 21300000, guid: 52a2781973835714487ca5fc0574d09f, type: 3}
+  - {fileID: 21300000, guid: 9d48edeba49cb3d498c6023f0088f5af, type: 3}
+  - {fileID: 21300000, guid: 9a264448ef19b0647903dcdd3594059a, type: 3}
 --- !u!1 &768285939
 GameObject:
   m_ObjectHideFlags: 0
