@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
             
             if(player.IsTouching(enemyCollider))
             {
-                Debug.Log("Yes");
+
                 UICanvas.Show();
             }
         }

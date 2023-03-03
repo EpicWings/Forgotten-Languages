@@ -15,6 +15,7 @@ public class DragDrop : MonoBehaviour
     {
         canvas = transform.root.GetComponent<Canvas>();
         item = GetComponentInChildren<UIItem>();
+        Default();
     }
 
     public void SetData(Sprite sprite, int level, string name, bool stackable, string description, int max)

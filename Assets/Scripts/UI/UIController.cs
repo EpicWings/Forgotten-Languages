@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UIController : MonoBehaviour
 {
-    [SerializeField] private Canvas UICanvas;
+    [SerializeField] private GameObject panel;
 
     private void Awake()
     {
@@ -13,11 +13,11 @@ public class UIController : MonoBehaviour
 
     public void Show()
     {
-        UICanvas.gameObject.SetActive(true);
+        panel.SetActive(true);
     }
 
     public void Hide()
     {
-        UICanvas.gameObject.SetActive(false);
+        panel.SetActive(false);
     }
 }
